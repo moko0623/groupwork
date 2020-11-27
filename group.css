@@ -50,14 +50,19 @@ margin-left:9px;
 .main-nav a{
 font-size:1rem;
 background:#22042D;
+font-weight:bold;
+letter-spacing:0.2rem;
 opacity:0.66;
 color:#fff;
 border-radius:50%;
-padding:13px 21px;
+padding:0px 10px;
+display:inline-block;
+text-align:center;
+width:100px;
 }
 
 .main-nav a:hover{
-color:#0f0;
+color:#b074d6;
 }
 
 .page-header{
@@ -100,7 +105,6 @@ display: inline-block;
 .box-text{
 margin-bottom:60px;
 text-align:center;
-font-family:平成明朝 Std;
 }
 
 .box-text p{
@@ -133,7 +137,6 @@ text-align:center;
 line-height:2.375rem;
 margin-bottom:50px;
 }
-}
 
 .menu-img{
 display: inline-block;
@@ -142,12 +145,13 @@ display: inline-block;
 .menu-text{
 display: inline-block;
 vertical-align:top;
-margin-left:80px;
+margin-left:56.5px;
 }
 
 h3{
 font-family: 'Condiment', cursive;
-color:#000;
+color:#fff;
+text-shadow: 0px 3px 6px #FFECFC6E;
 text-align:center;
 font-size:2.125rem;
 margin-bottom:33px;
@@ -187,7 +191,15 @@ padding:5px 5px;
 }
 
 a.link:hover{
-color:#0f0;
+color:#C7C368;
+}
+
+a.link:active{
+color: #fff;
+background-color:#ddbad0;
+position: relative;
+top: 2px;
+left: 2px;
 }
 
 li{
@@ -202,15 +214,20 @@ line-height:2.625rem;
 #sns .wrapper h2 {text-transform: uppercase;}
 #sns-container {
 display:flex;
-justify-content: space-between;
-max-height:500px;
+justify-content: space-around;
 margin-bottom:60px;
+}
+
+.sns-text{
+font-family:NSimSun;
+text-align:center;
+font-size:1.5625rem;
+margin-bottom:30px;
 }
 
 .twitter-timeline{
 width:400px;
 max-height:448px;
-
 }
 
 
@@ -221,19 +238,18 @@ max-height:448px;
 /*アクセス　ここから*/
 
 #access .wrapper h2{
-text-transform:uppercase;}
+text-transform:uppercase;
+}
 
-.sns-text{
-font-family:NSimSun;
-text-align:center;
-font-size:1.5625rem;
-margin-bottom:30px;
+.map {
+margin-bottom: 60px;
 }
 
 .info{
 width:700px;
 margin-right:auto;
 margin-left:auto;
+padding:10px 0 0 0;
 background-color:rgba(255,255,255,0.1);
 color:#000;}
 
@@ -243,6 +259,11 @@ font-size:2.125rem;
 margin:10px;
 }
 
+span.big{
+font-family: 'Condiment', cursive;
+font-size:1.5em;
+margin:20px;
+}
 
 /*アクセス　ここまで*/
 
@@ -253,70 +274,122 @@ margin:10px;
 /*こば担当パート②　Menu ここから*/
 table{
 width:486px;
-
+padding-top:15px;
 }
+
+.mobile {
+display: none;
+}
+
 /*こば担当パート②　Menu ここまで*/
+
 
 @media (max-width: 600px) {
 
+.mobile {
+display: inline;
+}
 
- br.pc {
-  display: none;
- }
+.wrapper{
+width: auto;
+}
 
+br.pc {
+display: none;
+}
 
 /*header*/
 
 .guide {
- flex-direction: column;
- align-items: center;
-    }
- 
- .page-header{
-  height:110px;
- }
- 
-  .box-text {
-   width: 400px;
-   margin: 0 auto;
- }
- 
- .box-text p{
-line-height:1rem;
- }
+flex-direction: column;
+align-items: center;
+width:100%;
+margin:0;
+}
+
+.logo{
+height: 75px;
+}
+
+.page-header{
+height:100%;
+width:100%;
+
+}
+
+.box-text {
+width: 100%;
+margin: 0 auto;
+}
+
+.box-text p{
+line-height:2rem;
+}
+
+.main-nav{
+width: 280px;
+margin:0;}
+
+.main-nav a{
+display:inline-block;
+width:auto;
+padding:0 5px;
+}
+
+
+
+
 /*menu*/
 
- .boxs {
- flex-direction: column;
-
- }
+.boxs {
+flex-direction: column;
+}
 
 .menu-text{
 display: inline-block;
 vertical-align:top;
 margin:0 auto;
 }
- 
+
 table{
-width: 400px;
- }
+width: auto;
+margin:auto;
+}
 
+.tabe-text{
+width:100%;
+text-align:center;
+margin:30px auto;
+}
 
- /*sns*/
+/*sns*/
 
- #sns-container {
- flex-direction: column;
-  
- }
- 
- h2 {
-  margin:0 auto;
-  width: 300px;
- }
- 
- .twitter-timeline{
- padding-bottom: 50px;
+#sns-container {
+flex-direction: column;
+}
+
+.wrapper{
+width:100%;
+text-align:center;
+}
+
+.twitter{
+margin:80px 10px;
+}
+
+.instag{
+margin:0 auto;
 }
 
 
+h2 {
+margin:0 auto;
+width: 300px;
+}
 
+/*access*/
+
+.info{
+width:auto;
+text-align:center;
+}
